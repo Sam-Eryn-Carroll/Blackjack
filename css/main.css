@@ -52,6 +52,10 @@ button {
   right: 50px;
 }
 
+.stay-button {
+  right: 50px;
+}
+
 .card {
   box-sizing: border-box;
   display: inline-block;
@@ -117,7 +121,7 @@ button {
 .card.diamonds.r10,
 .card.d10,
 .card.♦10 {
-  background-image: url("..code/Blackjack/card-images/diamonds-r10.svg"); }
+  background-image: url("../images/diamonds/diamonds-r10.svg"); }
 
 .card.diamonds.r09,
 .card.d09,

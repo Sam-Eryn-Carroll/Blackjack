@@ -109,7 +109,7 @@ function Stay() {
     stayBtn.click(function(evt) {
         flippedCard.remove()
         dealerAddCards()
-        if (dealerTotal < 16) {
+        while (dealerTotal < 16) {
         dealerAddCards()
         }
         stayBtn.remove()

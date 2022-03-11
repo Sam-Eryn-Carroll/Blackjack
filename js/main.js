@@ -36,19 +36,19 @@ let playerTotal = 0;
 
 let dealerTotal = 0;
 
-$buttonEl = $('.start-btn');
-$h1El = $('h1');
-$playerCardsEl = $(".playerCards");
-$dealerCardsEl = $('.dealerCards');
+$buttonEl = $('.start-btn')
+$h1El = $('h1')
+$playerCardsEl = $(".playerCards")
+$dealerCardsEl = $('.dealerCards')
 
 $buttonEl.click(function(evt) {
-    init();
+    init()
 });
 
 function init() {
     $buttonEl.remove()
     $h1El.text('')
-    render();
+    render()
 }
 
 function render() {
@@ -82,15 +82,15 @@ function addChoice() {
 
 function playerAddCards() {
     let newCard = $("<h2 class='pcard'></h2>").addClass('card ' + cards[0].suit + ' ' + cards[0].rank)
-    $playerCardsEl.append(newCard);
+    $playerCardsEl.append(newCard)
     playerCards.unshift(cards.shift())
     ace()
     playerTotal += playerCards[0].value
 }
 
 function dealerAddCards() {
-    let x = $("<h2 class='dcard'></h2>").addClass('card ' + cards[0].suit + ' ' + cards[0].rank)
-    $dealerCardsEl.append(x);
+    let newCard2 = $("<h2 class='dcard'></h2>").addClass('card ' + cards[0].suit + ' ' + cards[0].rank)
+    $dealerCardsEl.append(newCard2)
     dealerTotal += cards[0].value
     cards.shift()
 }
@@ -167,10 +167,10 @@ function rndNumber(min, max) {
 
 function shuffle() {
     for (let lastIndex = cards.length - 1; lastIndex > 0; lastIndex--) {
-       rand_index = rndNumber(0, lastIndex);
-       temp = cards[lastIndex];
-       cards[lastIndex] = cards[rand_index];
-       cards[rand_index] = temp;
+       rand_index = rndNumber(0, lastIndex)
+       temp = cards[lastIndex]
+       cards[lastIndex] = cards[rand_index]
+       cards[rand_index] = temp
     }
     console.log(cards)
 }

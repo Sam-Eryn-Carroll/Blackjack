@@ -172,5 +172,4 @@ function shuffle() {
        cards[lastIndex] = cards[rand_index]
        cards[rand_index] = temp
     }
-    console.log(cards)
 }

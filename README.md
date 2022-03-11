@@ -12,7 +12,10 @@ Play the game: https://sam-paschal-731.github.io/Blackjack/
 
 Next Steps: 
 
-Add choice to split
+Add choice to split.
+
 Add Betting and Restart button to go back and continue playing with previous amount of money.
+
 Add other players.
+
 Add multiple decks.

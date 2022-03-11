@@ -6,7 +6,7 @@ Screenshots: In images/Screenshots.
 
 Technologies used:
 
-JavaScript, CSS, HTML, VS Code
+JavaScript, CSS, HTML, VS Code, Jquery
 
 Play the game: https://sam-paschal-731.github.io/Blackjack/
 

@@ -76,8 +76,8 @@ function addChoice() {
     hitBtn = $("<button class='hit-btn'>Hit</button>")
     stayBtn = $("<button class='stay-btn'>Stay</button>")
     $('body').append(hitBtn, stayBtn)
-    Hit()
-    Stay()
+    hit()
+    stay()
 }
 
 function playerAddCards() {
@@ -94,7 +94,7 @@ function dealerAddCards() {
     dealerTotal += cards[0].value
     cards.shift()
 }
-function Hit() {
+function hit() {
     hitBtn.click(function(evt) {
         if (playerTotal <= 21) {
         playerAddCards()
@@ -105,7 +105,7 @@ function Hit() {
     })
 }
 
-function Stay() {
+function stay() {
     stayBtn.click(function(evt) {
         flippedCard.remove()
         dealerAddCards()
